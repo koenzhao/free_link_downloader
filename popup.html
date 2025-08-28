@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Link Downloader</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🔗 Free Link Downloader</h1>
+            <p class="subtitle">Download files from this page</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Loading State -->
+            <div id="loadingSection" class="loading-section">
+                <div class="spinner"></div>
+                <p>Scanning page for downloadable files...</p>
+            </div>
+
+            <!-- Page Info -->
+            <div id="pageInfo" class="page-info hidden">
+                <h3 id="pageTitle">Page Title</h3>
+                <p id="linkStats" class="stats">Found 0 downloadable files</p>
+            </div>
+
+                                    <!-- Controls -->
+            <div id="controls" class="controls-section hidden">
+                <!-- Primary Actions -->
+                <div class="primary-actions">
+                    <button id="selectAllBtn" class="btn btn-action">✅ Select All</button>
+                    <button id="selectNoneBtn" class="btn btn-action">❌ Deselect All</button>
+                    <button id="downloadAllBtn" class="btn btn-primary">📥 Download</button>
+                    <button id="rescanBtn" class="btn btn-action">🔄 Rescan</button>
+                </div>
+
+                                <!-- Secondary Actions -->
+                <div class="secondary-actions">
+                    <button id="highlightBtn" class="btn btn-secondary">🔍 Highlight Links</button>
+
+                    <div class="settings-group">
+                        <div class="filter-section">
+                            <label for="fileTypeFilter">Filter:</label>
+                            <select id="fileTypeFilter" class="filter-select">
+                                <option value="">All files</option>
+                                <option value="document">Documents</option>
+                                <option value="archive">Archives</option>
+                                <option value="media">Media</option>
+                                <option value="code">Code</option>
+                            </select>
+                        </div>
+
+                        <div class="delay-section">
+                            <label for="downloadDelay">Delay:</label>
+                            <select id="downloadDelay" class="delay-select">
+                                <option value="0">No delay</option>
+                                <option value="500">0.5s</option>
+                                <option value="1000" selected>1s</option>
+                                <option value="2000">2s</option>
+                                <option value="3000">3s</option>
+                                <option value="5000">5s</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Progress Bar -->
+            <div id="progressContainer" class="progress-container hidden">
+                <div class="progress-info">
+                    <span id="progressText">Downloaded: 0/0 files</span>
+                    <span id="progressPercentage">0%</span>
+                </div>
+                <div class="progress-bar-wrapper">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div class="progress-details">
+                    <span id="progressRemaining">0 files remaining</span>
+                    <span id="progressDelay">1s delay</span>
+                </div>
+                <div class="progress-controls">
+                    <button id="stopDownloadsBtn" class="btn btn-danger">
+                        🛑 Stop Downloads
+                    </button>
+                </div>
+            </div>
+
+            <!-- File Links List -->
+            <div id="filesList" class="files-list hidden">
+                <!-- Files will be populated here -->
+            </div>
+
+            <!-- No Files Found -->
+            <div id="noFilesSection" class="no-files-section hidden">
+                <div class="no-files-icon">📄</div>
+                <h3>No downloadable files found</h3>
+                <p>This page doesn't contain any links to downloadable files like PDFs, documents, archives, or media files.</p>
+                <button id="noFilesRescanBtn" class="btn btn-secondary">🔄 Rescan Page</button>
+            </div>
+
+            <!-- Error State -->
+            <div id="errorSection" class="error-section hidden">
+                <div class="error-icon">⚠️</div>
+                <h3>Error scanning page</h3>
+                <p id="errorMessage">Unable to scan this page for downloadable files.</p>
+                <button id="retryBtn" class="btn btn-secondary">🔄 Try Again</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-stats">
+                <span id="downloadProgress" class="hidden">Downloaded: 0/0</span>
+                <span id="footerInfo">Ready to scan</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

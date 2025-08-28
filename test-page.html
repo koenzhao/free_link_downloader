@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Link Downloader - Test Page</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #007bff;
+        }
+
+        .section h2 {
+            color: #495057;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .links {
+            display: grid;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .link-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .link-item a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .link-item a:hover {
+            text-decoration: underline;
+        }
+
+        .file-icon {
+            font-size: 1.5em;
+            width: 30px;
+            text-align: center;
+        }
+
+        .instructions {
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .instructions h3 {
+            color: #1976d2;
+            margin-top: 0;
+        }
+
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 8px;
+        }
+
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .note strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Free Link Downloader Test Page</h1>
+
+        <div class="instructions">
+            <h3>📋 How to Test the Extension</h3>
+            <ol>
+                <li>Make sure the "Free Link Downloader" extension is loaded and enabled</li>
+                <li>Click the extension icon in your browser toolbar</li>
+                <li>The extension should automatically detect all the download links below</li>
+                <li>Test the background download feature by selecting files and clicking "Download"</li>
+                <li>Close the popup after starting downloads to verify they continue in background</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>📄 Document Files</h2>
+            <div class="links">
+                <div class="link-item">
+                    <span class="file-icon">📄</span>
+                    <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" download="sample-document.pdf">Sample PDF Document</a>
+                    <span>(PDF, 13KB)</span>
+                </div>
+                <div class="link-item">
+                    <span class="file-icon">📝</span>
+                    <a href="data:text/plain;charset=utf-8,This%20is%20a%20sample%20text%20file%20for%20testing%20the%20All%20Link%20Downloader%20extension." download="sample-text.txt">Sample Text File</a>
+                    <span>(TXT, 1KB)</span>
+                </div>
+                <div class="link-item">
+                    <span class="file-icon">📊</span>
+                    <a href="data:text/csv;charset=utf-8,Name,Age,City%0AJohn,30,New%20York%0AJane,25,Los%20Angeles" download="sample-data.csv">Sample CSV File</a>
+                    <span>(CSV, 1KB)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🖼️ Image Files</h2>
+            <div class="links">
+                <div class="link-item">
+                    <span class="file-icon">🖼️</span>
+                    <a href="https://via.placeholder.com/300x200/0066cc/ffffff?text=Sample+Image+1" download="sample-image-1.png">Sample Image 1</a>
+                    <span>(PNG, ~5KB)</span>
+                </div>
+                <div class="link-item">
+                    <span class="file-icon">🖼️</span>
+                    <a href="https://via.placeholder.com/400x300/cc6600/ffffff?text=Sample+Image+2" download="sample-image-2.jpg">Sample Image 2</a>
+                    <span>(JPG, ~6KB)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📦 Archive Files</h2>
+            <div class="links">
+                <div class="link-item">
+                    <span class="file-icon">📦</span>
+                    <a href="data:application/zip;base64,UEsDBAoAAAAAAKlQUVIAAAAAAAAAAAAAAAAJAAAAdGVzdC50eHRQSwECFAAKAAAAAAOpUFFSAAAAAAAAAAAAAAAACQAAAAAAAAAAACAAAAAAAAAAdGVzdC50eHRQSwUGAAAAAAEAAQA3AAAAHwAAAAAA" download="sample-archive.zip">Sample ZIP Archive</a>
+                    <span>(ZIP, 1KB)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💾 Code Files</h2>
+            <div class="links">
+                <div class="link-item">
+                    <span class="file-icon">💾</span>
+                    <a href="data:text/javascript;charset=utf-8,console.log('Hello%20from%20sample%20JavaScript%20file!');%0A%0Afunction%20greet(name)%20%7B%0A%20%20%20%20return%20'Hello,%20'%20%2B%20name%20%2B%20'!';%0A%7D" download="sample-script.js">Sample JavaScript File</a>
+                    <span>(JS, 1KB)</span>
+                </div>
+                <div class="link-item">
+                    <span class="file-icon">🎨</span>
+                    <a href="data:text/css;charset=utf-8,body%20%7B%0A%20%20%20%20font-family:%20Arial,%20sans-serif;%0A%20%20%20%20background-color:%20%23f0f0f0;%0A%7D%0A%0A.container%20%7B%0A%20%20%20%20max-width:%20800px;%0A%20%20%20%20margin:%200%20auto;%0A%7D" download="sample-styles.css">Sample CSS File</a>
+                    <span>(CSS, 1KB)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> These are sample files created specifically for testing the extension.
+            The extension should detect all these links and allow you to download them selectively
+            with background processing. If you encounter any issues, refer to the DEBUGGING_BACKGROUND.md guide.
+        </div>
+    </div>
+</body>
+</html>

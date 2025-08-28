@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Generator - Free Link Downloader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f0f0f0;
+        }
+        .icon-container {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .icon::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 60%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/><path d="M12,11A1,1 0 0,0 11,12V16A1,1 0 0,0 12,17A1,1 0 0,0 13,16V13.5L13.5,14C13.66,14.16 13.84,14.24 14,14.24C14.16,14.24 14.34,14.16 14.5,14L16.5,12C16.66,11.84 16.74,11.66 16.74,11.5C16.74,11.34 16.66,11.16 16.5,11L14.5,9C14.34,8.84 14.16,8.76 14,8.76C13.84,8.76 13.66,8.84 13.5,9L13,9.5V12A1,1 0 0,0 12,11Z"/></svg>') no-repeat center center;
+            background-size: contain;
+        }
+        .icon-128 { width: 128px; height: 128px; font-size: 64px; }
+        .icon-48 { width: 48px; height: 48px; font-size: 24px; }
+        .icon-32 { width: 32px; height: 32px; font-size: 16px; }
+        .icon-16 { width: 16px; height: 16px; font-size: 8px; }
+
+        .simple-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        h1 { color: #333; }
+        h2 { color: #666; margin-top: 30px; }
+        p { color: #888; }
+        .instructions {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔗 Free Link Downloader - Icon Generator</h1>
+
+    <div class="instructions">
+        <h3>📸 How to create icon files:</h3>
+        <ol>
+            <li>Right-click on each icon below</li>
+            <li>Select "Inspect Element" or press F12</li>
+            <li>Right-click on the icon div in the inspector</li>
+            <li>Select "Screenshot node" (Chrome) or use a screenshot tool</li>
+            <li>Save as PNG with the correct filename</li>
+        </ol>
+        <p><strong>Alternative:</strong> Use online tools like <a href="https://www.favicon-generator.org/" target="_blank">Favicon Generator</a> with the SVG below.</p>
+    </div>
+
+    <h2>🎨 Design Option 1: Link + Download Symbol</h2>
+    <div class="icon-container">
+        <div class="icon icon-128" id="icon128-v1"></div>
+        <p>128×128<br>icon128.png</p>
+    </div>
+    <div class="icon-container">
+        <div class="icon icon-48" id="icon48-v1"></div>
+        <p>48×48<br>icon48.png</p>
+    </div>
+    <div class="icon-container">
+        <div class="icon icon-32" id="icon32-v1"></div>
+        <p>32×32<br>icon32.png</p>
+    </div>
+    <div class="icon-container">
+        <div class="icon icon-16" id="icon16-v1"></div>
+        <p>16×16<br>icon16.png</p>
+    </div>
+
+    <h2>🎨 Design Option 2: Simple Text-Based</h2>
+    <div class="icon-container">
+        <div class="simple-icon icon-128">🔗</div>
+        <p>128×128<br>icon128.png</p>
+    </div>
+    <div class="icon-container">
+        <div class="simple-icon icon-48">🔗</div>
+        <p>48×48<br>icon48.png</p>
+    </div>
+    <div class="icon-container">
+        <div class="simple-icon icon-32">🔗</div>
+        <p>32×32<br>icon32.png</p>
+    </div>
+    <div class="icon-container">
+        <div class="simple-icon icon-16">⇣</div>
+        <p>16×16<br>icon16.png</p>
+    </div>
+
+    <h2>📁 SVG Source Code</h2>
+    <div class="instructions">
+        <p>Use this SVG code with online converters:</p>
+        <textarea style="width: 100%; height: 200px; font-family: monospace;" readonly>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="12" fill="url(#bg)"/>
+  <!-- Chain link symbol -->
+  <path d="M45 55 L55 45 M35 65 L45 55 M55 45 L65 35 M73 55 L83 45 M83 45 L93 35 M73 55 L83 65"
+        stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Download arrow -->
+  <path d="M64 75 L64 95 M54 85 L64 95 L74 85"
+        stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Base line -->
+  <line x1="45" y1="105" x2="83" y2="105" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>
+        </textarea>
+    </div>
+
+    <div class="instructions">
+        <h3>🚀 Quick Setup:</h3>
+        <p>After creating the PNG files, update your manifest.json to include:</p>
+        <pre style="background: #f5f5f5; padding: 10px; border-radius: 4px; overflow: auto;">
+"action": {
+  "default_popup": "popup.html",
+  "default_title": "Free Link Downloader",
+  "default_icon": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+},
+"icons": {
+  "16": "icons/icon16.png",
+  "32": "icons/icon32.png",
+  "48": "icons/icon48.png",
+  "128": "icons/icon128.png"
+}
+        </pre>
+    </div>
+</body>
+</html>

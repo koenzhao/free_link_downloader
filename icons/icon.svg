@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="128" height="128" rx="16" fill="url(#bg)"/>
+
+  <!-- Chain link symbols -->
+  <g stroke="white" stroke-width="6" stroke-linecap="round" fill="none">
+    <!-- First link -->
+    <ellipse cx="45" cy="45" rx="12" ry="8" transform="rotate(-45 45 45)"/>
+    <!-- Second link -->
+    <ellipse cx="60" cy="60" rx="12" ry="8" transform="rotate(-45 60 60)"/>
+    <!-- Third link -->
+    <ellipse cx="75" cy="75" rx="12" ry="8" transform="rotate(-45 75 75)"/>
+  </g>
+
+  <!-- Download arrow -->
+  <g stroke="white" stroke-width="5" stroke-linecap="round" fill="none">
+    <line x1="64" y1="85" x2="64" y2="105"/>
+    <polyline points="54,95 64,105 74,95"/>
+  </g>
+
+  <!-- Base line -->
+  <line x1="45" y1="115" x2="83" y2="115" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>
