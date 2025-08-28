@@ -46,29 +46,8 @@ A powerful Chrome extension that finds and downloads all files from any webpage 
 
 **Real websites**: Try on documentation sites, software repositories, or any page with downloadable files.
 
-## 🔧 Troubleshooting
-
-**Extension won't load**:
-- Enable "Developer mode" in `chrome://extensions/`
-- Check for error messages in the extensions page
-- Click "Reload" button next to the extension
-
-**No files found**:
-- Make sure the page has direct download links
-- Try the included `test-page.html` to verify it works
-- Some sites use JavaScript-generated links that aren't detected
-
-**Downloads don't start**:
-- Check Chrome's download settings
-- Go to `chrome://extensions/` and click "service worker" to see logs
-- Try reloading the extension
-
-## 📁 Supported Files
-
-- **📄 Documents**: PDF, DOC, XLS, PPT, TXT
-- **📦 Archives**: ZIP, RAR, 7Z, TAR, GZ
-- **🎵 Media**: MP3, MP4, JPG, PNG, GIF
-- **💻 Code**: JS, CSS, JSON, XML, SQL
+## 🔧 Issue or New Feature
+Clone or fork this project, then use your preferred AI coding assistant (this project was written in Cursor using Claude4) to fix the issue or meet your requirements.
 
 ## 🛠️ Development
 
@@ -83,4 +62,4 @@ To modify the extension:
 
 ---
 
-**Built with ❤️ for efficient bulk downloading!**
+**Built with Claude4 in Cursor for efficient bulk downloading!**
