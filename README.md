@@ -1,4 +1,7 @@
-# 🔗 Free Link Downloader
+# 🔗 Free Link Downloader - Chrome Extension
+
+> [!NOTE]
+> This extension was written by LLM (Claude4 in Cursor). The chat file can be found in the `chat` folder.
 
 A powerful Chrome extension that finds and downloads all files from any webpage with one click. Perfect for bulk downloading documents, images, archives, and more.
 
