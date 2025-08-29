@@ -16,9 +16,9 @@ body {
 
 /* Container */
 .container {
-    width: 380px;
-    min-height: 500px;
-    max-height: 600px;
+    width: 400px;
+    min-height: 700px;
+    max-height: 800px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -416,7 +416,7 @@ body {
 .files-list {
     flex: 1;
     overflow-y: auto;
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .file-item {
