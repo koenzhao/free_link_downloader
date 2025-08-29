@@ -70,8 +70,8 @@ We may update this privacy policy occasionally. Any changes will be reflected in
 
 For questions about this privacy policy or the extension's data practices, please contact:
 
-- **Email**: [Your Email Address]
-- **GitHub Issues**: https://github.com/[your-username]/free_link_downloader/issues
+- **Email**: koen.chiu@gmail.com
+- **GitHub Issues**: https://github.com/koenzhao/free_link_downloader/issues
 
 ## User Rights
 
